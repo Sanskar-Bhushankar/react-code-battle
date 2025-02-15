@@ -4,7 +4,7 @@
   border-radius: 4px;
   overflow: hidden;
   background-color: #1e1e1e;
-  height: calc(100% - 40px); /* Account for header */
+  height: calc(100% - 30px);
 }
 
 .code-editor-container > div {
