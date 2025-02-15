@@ -9,7 +9,7 @@ importers:
   .:
     dependencies:
       '@babel/standalone':
-        specifier: ^7.26.9
+        specifier: ^7.22.5
         version: 7.26.9
       '@monaco-editor/react':
         specifier: ^4.7.0
