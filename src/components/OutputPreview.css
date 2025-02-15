@@ -1,0 +1,89 @@
+.output-preview {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 40px); /* Account for header */
+  gap: 12px;
+}
+
+.expected-output {
+  background-color: rgba(100, 108, 255, 0.1);
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  flex-shrink: 0;
+}
+
+.expected-output code {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 2px 6px;
+  border-radius: 3px;
+  margin-left: 4px;
+}
+
+.preview-content {
+  flex: 1;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.03);
+  border-radius: 4px;
+  overflow-y: auto;
+  min-height: 100px;
+}
+
+.success-message {
+  margin-top: 16px;
+  padding: 16px;
+  background-color: rgba(76, 175, 80, 0.1);
+  border-radius: 8px;
+  border-left: 4px solid #4CAF50;
+  animation: slideIn 0.3s ease-out;
+}
+
+.success-message span {
+  color: #4CAF50;
+  font-weight: bold;
+  font-size: 1.1em;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.success-message p {
+  color: #e0e0e0;
+  margin: 0;
+}
+
+.error-message {
+  margin-top: 16px;
+  padding: 16px;
+  background-color: rgba(255, 68, 68, 0.1);
+  border-radius: 8px;
+  border-left: 4px solid #ff4444;
+  animation: slideIn 0.3s ease-out;
+}
+
+.error-message span {
+  color: #ff4444;
+  font-weight: bold;
+  font-size: 1.1em;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.error-message pre {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 8px;
+  border-radius: 4px;
+  margin: 8px 0 0;
+  color: #e0e0e0;
+  overflow-x: auto;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} 
